@@ -1,9 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/graylight"
+    tools:context=".MainActivity">
+
+
+   <ImageView
+       android:id="@+id/tv_logo"
+       android:layout_width="150dp"
+       android:layout_height="50dp"
+       android:textAlignment="center"
+       android:textSize="50sp"
+       android:layout_marginTop="60dp"
+       android:layout_marginBottom="50dp"
+       android:gravity="center_horizontal"
+       android:src="@drawable/khadamat_black"
+       android:layout_marginLeft="25dp" />
+
+
+   <EditText
+       android:id="@+id/et_place"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:hint="Que cherchez-vous ?"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginBottom="10dp"
+       android:padding="15dp"
+       android:inputType="textPersonName"
+       android:background="@drawable/et_custom"
+       android:textSize="15sp" />
+
+   <Spinner
+       android:id="@+id/category"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginBottom="10dp"
+       android:padding="15dp"
+       android:layout_centerHorizontal="true"
+       android:background="@drawable/et_custom"
+       />
+
+   <Spinner
+       android:id="@+id/ville"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginBottom="10dp"
+       android:padding="15dp"
+       android:layout_centerHorizontal="true"
+       android:background="@drawable/et_custom"
+       />
+
+   <Spinner
+       android:id="@+id/secteur"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+       android:layout_marginBottom="10dp"
+       android:padding="15dp"
+       android:layout_centerHorizontal="true"
+       android:background="@drawable/et_custom"
+       />
+
+
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1">
+
+      <Button
+          android:id="@+id/bSearch"
+          android:layout_width="200dp"
+          android:layout_height="wrap_content"
+          android:background="@drawable/btn_custom"
+          android:drawableRight="@android:drawable/ic_menu_search"
+          android:layout_marginLeft="20dp"
+          android:layout_marginRight="20dp"
+          android:layout_marginBottom="30dp"
+          android:layout_centerInParent="true"
+          android:textColor="@android:color/white"
+          android:text="Search"
+          android:textSize="20dp"/>
+
+
+   </RelativeLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+<!--?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/graylight"
     tools:context=".MainActivity">
 
    <com.hitomi.cmlibrary.CircleMenu
@@ -12,4 +122,4 @@
        android:id="@+id/circleMenu"/>
 
 
-</RelativeLayout>
+</RelativeLayout-->
